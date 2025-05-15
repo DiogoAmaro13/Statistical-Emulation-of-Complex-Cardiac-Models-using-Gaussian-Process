@@ -12,11 +12,4 @@ Cardiovascular diseases remain the leading global cause of mortality, accounting
 3. **Inter-patient variability**: Standard models fail to capture 27-42% of pathological hemodynamics (European Heart Journal, 2021)
 
 ### Technical Approach
-This work addresses these challenges through:
-
-```math
-\begin{aligned}
-&\text{Gaussian Process Emulator:} & f(q) &\sim \mathcal{GP}(m(q), k(q,q')) \\
-&\text{where } q &= [q_1,q_2,q_3,q_4]^T \text{ (biomechanical parameters)} \\
-&\text{and } f(q) &= [\alpha_0,\beta_0,\alpha_1,\beta_1,\alpha_2,\beta_2]^T \text{ (clinical observables)}
-\end{aligned}
+This work addresses these challenges through the development of a twin cardiac model capable of replicating the functioning of the heart when submitted to abnormal conditions (sudden raise in ventricular pressure, disrupted heart beats, etc). With an individualized model it is possible to simulate some of this changes in the digital twin heart and understand the response of the heart in case it is submitted to that same change in a real case situation.
